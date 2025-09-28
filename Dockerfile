@@ -10,4 +10,4 @@ RUN mkdir -p /config /runner /cache /usr/local/bin
 RUN curl -L -o /usr/bin/act_runner \
     https://gitea.com/gitea/act_runner/releases/download/v0.2.13/act_runner-0.2.13-linux-amd64 && \
     chmod +x /usr/bin/act_runner
-RUN systemctl enable --now podman
+RUN systemctl enable podman
