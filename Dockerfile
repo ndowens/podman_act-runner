@@ -8,5 +8,6 @@ RUN mkdir -p /config /runner /cache /usr/local/bin
 
 # Download act_runner binary
 RUN curl -L -o /usr/bin/act_runner \
-    https://github.com/nektos/act_runner/releases/latest/download/act_runner-linux-amd64 && \
-    chmod +x /usr/bin/act_runner
+    https://gitea.com/gitea/act_runner/releases/download/v0.2.13/act_runner-0.2.13-linux-amd64 && \
+    chmod +x /usr/bin/act_runner && \
+    ls -l /usr/bin/act_runner
